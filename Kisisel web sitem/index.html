@@ -12,19 +12,63 @@
 
             html{
                 background-color:darkseagreen;
+                font-size:17px;
 
             }
+        
 
             h1{
                  color:aliceblue;
-                font-size: 45px;
+                font-size: 4rem;
             }
 
             .jumbotron{
+                max-width:100%;
+                height:auto;
                     background-image: url(img/pexels-photo-1072179.jpeg);
-                    background-size: cover;
+                    
                     background-position:top;
                  }
+        
+        nav {
+            width:100%
+            padding-top:2.4rem;
+            padding-bottom:2.4rem;
+            position:fixed;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style-type:none;
+        }
+        
+        .clearfix::after
+        {
+            content:"";
+            display:block;
+            clear:both;
+        }
+        
+        #nav-links{
+            float:right;
+        }
+        
+        #nav-links .nav-item {
+            float:left;
+            margin: .4rem;
+           
+        }
+        
+        #nav-links .nav-link {
+            font-size: :1.6rem;
+                font-weight: 500;
+            display:block;
+            padding:1rem;
+            letter-spacing: .1rem;
+        }
 
             .box{
                 width:100%;
@@ -37,17 +81,31 @@
             *{
                 box-sizing:border-box;
             }
+        p {
+            font-size:1.4rem;
+        }
 
 
             img{
                 float:left;
                 margin-right:20px;
             }
+        
+        .container{
+            width:100%;
+            margin-left:auto;
+            margin-right:auto;
+            padding-left:.5rem;
+            padding-right:.5rem;
+        }
 
 
 
-            @media screen and (max-width:700px)
+            @media screen and (max-width:768px)
             {
+                .container {
+                    max width:720;
+                }
 
                 h1{
 
@@ -75,7 +133,7 @@
 <body>
    <header>
    
-
+<div id="container"></div>
         <div class="jumbotron">
             <center>
             <h1>Tuğçe Ergün</h1>
@@ -83,14 +141,36 @@
         </div>
 
        <nav class="navbar bg light navbar expand-sm justify-content-center">
+               <div class="container clearfix"></div>
+               
+                <div id="nav-links">
+                    
+                    <ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">Özgeçmiş</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">Şehrim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">Mirasımız</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">İlgi Alanlarım</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn btn-outline-success">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
 
-                <a href="" class="btn btn-outline-success">Hakkımda</a>
-                <a href="" class="btn btn-outline-success">Özgeçmiş</a>
-                <a href="" class="btn btn-outline-success">Şehrim</a>
-                <a href="" class="btn btn-outline-success">Mirasımız</a>
-                <a href="" class="btn btn-outline-success">İlgi Alanlarım</a>
-                <a href="" class="btn btn-outline-success">Login</a>
-                <a href="" class="btn btn-outline-success">İletişim</a>
+            
 
         </nav>
     
