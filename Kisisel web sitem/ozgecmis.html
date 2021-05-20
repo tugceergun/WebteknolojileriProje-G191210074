@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Hakkımda</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     
+    <title>Özgeçmiş</title>
+    
     <link rel="stylesheet" href="style">
     
     <style>
-
-            html{
+    
+    html{
                 background-color:#696969;
                 font-size:17px;
 
@@ -21,6 +22,9 @@
                  color:aliceblue;
                 font-size: 4rem;
             }
+        h2 {
+            color:aliceblue;
+        }
 
             .jumbotron{
                 max-width:100%;
@@ -69,83 +73,30 @@
             padding:1rem;
             letter-spacing: .1rem;
         }
-
-            .box{
-                width:100%;
-                    height:250px;
-                border:1px solid;
-                float:left;
-                padding: 20px;
-
-            }
-
-            *{
-                box-sizing:border-box;
-            }
         
-        p {
-            font-size:1.4rem;
+        section{
+            margin:2rem;
         }
-
-
-            img{
-                float:left;
-                margin-right:20px;
-            }
-        
-        .container{
-            width:100%;
-            margin-left:auto;
-            margin-right:auto;
-            padding-left:.5rem;
-            padding-right:.5rem;
-        }
-
-
-
-            @media screen and (max-width:800px)
-            {
-                html{
-                    font-size: 9px;
-                }
-                .container {
-                    max width:720;
-                }
-
-                h1{
-
-                    font-size:35px;
-                  }
-
-                .box{
-                
-                    width:100%;
-                    float:left;
-                    overflow:auto;
-                    padding: 23px;
-                }
-
-
-            }
-
-            img{
-                max-width:100%;
-                height:auto;
-            }
-
+    
     
     </style>
     
 </head>
 <body>
-   <header>
+   
+   
+    <header>
    
 <div id="container"></div>
         <div class="jumbotron">
             <center>
             <h1>Tuğçe Ergün</h1>
+            <hr>
+            <h2>Kişisel web sitem</h2>
             </center>
         </div>
+        
+        
 
        <nav class="navbar bg light navbar expand-sm justify-content-center">
                <div class="container clearfix"></div>
@@ -154,7 +105,7 @@
                     
                     <ul>
                         <li class="nav-item">
-                            <a href="#" class="nav-link btn btn-outline-success">Hakkımda</a>
+                            <a href="index.html" class="nav-link btn btn-outline-success">Hakkımda</a>
                         </li>
                         <li class="nav-item">
                             <a href="ozgecmis.html" class="nav-link btn btn-outline-success">Özgeçmiş</a>
@@ -177,47 +128,47 @@
                     </ul>
                 </div>
 
-            
+            </nav>
 
-        </nav>
-    
     </header>
-    <br>
+    
     <main>
-         
-             <div id="container"></div>
-<center>
-              <div class="box">
-
-
-
-                  <img src="img/kisisel-photo1.jpg" width="200"> 
-
-                  <h3>Merhaba!</h3>
-
-                  <p>Ben Tuğçe Ergün. 17 Şubat 2000 tarihinde Kırıkkale'de doğdum.Doğduğumdan bu yana Kırıkkale'de yaşıyorum. Şu anda Sakarya Üniversitesi'nde bigisayar mühendisliği okuyorum. Bu siteyi, kendimi ve şehrimi tanıttığım kişisel bir site olarak geliştirdim.</p>
-
-              </div>
-        </center>
-              <div class="box">
-                  
-                  <h5>Hobilerim ve sevdiğim şeyler:</h5>
-                  
-                  
-                      <ol>
-                          <li>Müzik dinlemek</li>
-                          <li>Yürüyüş yapmak</li>
-                          <li>Ukulele çalmak</li>
-                          <li>Voleybol oynamak</li>
-                          
-                      </ol>
-                
-                  
-              </div>
-              <div class ="box"></div>
-      
+       
+       <section>
+           <h3>Kariyer Hedefim:</h3>
+           Yazılım alanında kendimi ve yetkinliklerimi geliştirerek başarılı bir bilgisayar mühendisi olmak.      
+       </section>
+        <br><br>
+        <section>
+            <h3>Eğitim bilgilerim:</h3>
+            <ol>
+                <li> Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü (2019-2024) </li>
+                <li> Lise(2014-2018) </li>
+            </ol>
+        </section>
+        <br><br>
+        <section>
+            <h3>Yabancı Dil:</h3>
+            İngizlice/Orta derece
+        </section>
+        <br><br>
     </main>
-      
+   
+   
+   <footer>
+       
+   </footer>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
