@@ -2,113 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Login</title>
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width">
     
-    <title>Şehrim</title>
-    
-    <link rel="stylesheet" href="style">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <style>
     
-    html{
-                background-color:#696969;
-                font-size:17px;
-
-            }
-        
-
-            h1{
-                 color:aliceblue;
-                font-size: 4rem;
-            }
-        h2 {
-            color:aliceblue;
-        }
-
-            .jumbotron{
+        .jumbotron{
                 max-width:100%;
                 height:auto;
                     background-image: url(img/pexels-photo-1072179.jpeg);
                     
                     background-position:top;
                  }
-        
-        nav {
-            width:100%
-            padding-top:2.4rem;
-            padding-bottom:2.4rem;
-            position:fixed;
-        }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        ul {
-            list-style-type:none;
-        }
-        
-        .clearfix::after
-        {
-            content:"";
-            display:block;
-            clear:both;
-        }
-        
-        #nav-links{
-            float:right;
-        }
-        
-        #nav-links .nav-item {
-            float:left;
-            margin: .4rem;
-           
-        }
-        
-        #nav-links .nav-link {
-            font-size: :1.6rem;
-                font-weight: 500;
-            display:block;
-            padding:1rem;
-            letter-spacing: .1rem;
-        }
-        
-        section{
-            margin:2rem;
-        }
-    
-    
     </style>
-    
+  
 </head>
-
 <body>
    
-    <header>
-   
-<div id="container"></div>
-        <div class="jumbotron">
+   <div class="jumbotron">
             <center>
             <h1>Tuğçe Ergün</h1>
-            <hr>
-            <h2>Kişisel web sitem</h2>
             </center>
         </div>
+    
+    <nav class="navbar bg-light navbar-expand-sm navbar-light fixed-top">
         
+        <div class="container">
         
-
-       <nav class="navbar bg light navbar expand-sm justify-content-center">
-               <div class="container clearfix"></div>
-               
-                <div id="nav-links">
-                    
-                    <ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-targer="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            
+        
+         <ul class="navbar-nav ml-auto">
+                       
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link btn btn-outline-success">Hakkımda</a>
+                            <a href="index.html" class="nav-link">Hakkımda</a>
                         </li>
                         <li class="nav-item">
-                            <a href="ozgecmis.html" class="nav-link btn btn-outline-success">Özgeçmiş</a>
+                            <a href="ozgecmis.html" class="nav-link">Özgeçmiş</a>
                         </li>
                         <li class="nav-item">
                             <a href="sehrim.html" class="nav-link btn btn-outline-success">Şehrim</a>
@@ -125,18 +62,17 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link btn btn-outline-success">İletişim</a>
                         </li>
+                        
                     </ul>
-                </div>
-
-            </nav>
-
-    </header>
-    
-    
+                 
+        </div>   
+        </div>
+    </nav>
     
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
 </body>
 </html>
